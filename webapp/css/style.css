@@ -1,0 +1,53 @@
+html[dir="ltr"] .myAppDemoWT .myCustomButton.sapMBtn {
+	margin-right: 0.125rem
+}
+
+html[dir="rtl"] .myAppDemoWT .myCustomButton.sapMBtn {
+	margin-left: 0.125rem
+}
+
+.myAppDemoWT .myCustomText {
+	display: inline-block;
+	font-weight: bold;
+}
+
+/*	ProductRating */
+.myAppDemoWTProductRating {
+	padding: 0.75rem;
+}
+
+.myAppDemoWTProductRating .sapMRI {
+	vertical-align: initial;
+}
+
+.loginBackground {
+	background-image: url("../img/grey_Background.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 100%;
+  }
+
+/* Micsoreaza si aliniaza vertical logo-ul din ObjectPageHeader */
+.sapUxAPObjectPageHeader .sapUxAPObjectPageHeaderObjectImage {
+	width: 120px;       /* incearca 80–140px dupa gust */
+	height: auto;
+  }
+  
+  /* Centreaza vertical titlul + actiunile in bara header-ului */
+  .sapUxAPObjectPageHeaderTitle {
+	align-items: center; /* flex alignment */
+  }
+  
+  /* aliniaza vertical zona de actiuni cu logo-ul */
+.sapUxAPObjectPageHeader .sapUxAPObjectPageHeaderActions {
+	display: flex;
+	align-items: center;
+  }
+  
+  /* optional: spatiu intre logo si actiuni */
+  .sapUxAPObjectPageHeader .sapUxAPObjectPageHeaderObjectImage {
+	margin-right: 12px;
+  }
+  .product-strip { gap: 24px; }

@@ -1,0 +1,124 @@
+<mvc:View
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns:f="sap.uxap"
+  xmlns:m="sap.m"
+  controllerName="ui5.walkthrough.controller.Website_firstpage"
+  xmlns:sf="sap.f"
+  height="100%">
+
+  <f:ObjectPageLayout preserveHeaderStateOnScroll="true" showFooter="true">
+
+    <f:headerTitle>
+      <f:ObjectPageHeader objectTitle="">
+        <f:actions>
+        </f:actions>
+      </f:ObjectPageHeader>
+    </f:headerTitle>
+
+    <f:headerContent>
+         <m:Bar>
+        <m:contentLeft>
+          <m:Image src="img/logo1.png" densityAware="false" width="50px" height="26px" alt="Logo"/>
+        </m:contentLeft>
+        <m:contentMiddle>
+          <m:SearchField placeholder="Caută..." width="40rem"  liveChange=".onSearch"/>
+        </m:contentMiddle>
+        <m:contentRight>
+          <m:Button text="Favorite" icon="sap-icon://heart-2" press=".onFavoritePress"/>
+          <m:Button text="Contul Meu" icon="sap-icon://account" press=".onContulMeuPress"/>
+          <m:Button text="Cos" icon="sap-icon://cart" press=".onCosPress"/>
+        </m:contentRight>
+        </m:Bar>
+     <m:Bar design="Header">
+        <m:contentLeft>
+          <m:Button text="Categorii produse" icon="sap-icon://menu2" press=".onCategoriiPress"/>
+          <m:Button text="Oferte curente" icon="sap-icon://navigation-right-arrow" press=".onOfertePress"/>
+          <m:Button text="Lichidari stoc" icon="sap-icon://navigation-right-arrow" press=".onLichidariPress"/>
+        </m:contentLeft>
+        <m:contentRight>
+          <m:Button text="Estimare cost livrare" icon="sap-icon://navigation-right-arrow" press=".onEstimareCostLivrarePress"/>
+          <m:Button text="Contact" icon="sap-icon://navigation-right-arrow" press=".onContactPress"/>
+        </m:contentRight>
+      </m:Bar>
+    </f:headerContent>
+    <f:sections>
+
+<f:ObjectPageSection title="Produse populare">
+  <f:subSections>
+    <f:ObjectPageSubSection>
+      <f:blocks>
+
+        <m:ScrollContainer width="100%" height="22rem"
+                           horizontal="true" vertical="false">
+          <m:FlexBox
+            items="{viewModel>/items}"
+            wrap="NoWrap"
+            alignItems="Stretch"
+            justifyContent="Start"
+            class="sapUiMediumMargin product-strip">
+            <m:items>
+              <m:VBox width="16rem" class="sapUiSmallMargin">
+                <m:Image src="{= ${viewModel>img} || 'img/placeholder.png' }"
+                         width="100%" height="10rem" densityAware="false"/>
+                <m:Title text="{viewModel>name}" level="H5" class="sapUiSmallMarginTop"/>
+                <m:ObjectNumber number="{viewModel>price}" unit="lei" emphasized="true"/>
+                <m:Button text="Adauga in cos" type="Emphasized"
+                          press=".onAddToCart" class="sapUiSmallMarginTop"/>
+              </m:VBox>
+            </m:items>
+          </m:FlexBox>
+        </m:ScrollContainer>
+
+      </f:blocks>
+    </f:ObjectPageSubSection>
+  </f:subSections>
+</f:ObjectPageSection>
+
+
+
+  <!-- Carusel promo -->
+  <f:ObjectPageSection title="Promoții">
+    <f:subSections>
+      <f:ObjectPageSubSection>
+        <f:blocks>
+          <m:Carousel height="22rem" loop="true" showPageIndicator="true" pageIndicatorPlacement="Bottom">
+            <m:Image src="img/40x40x2.webp" densityAware="false"/>
+            <m:Image src="img/banner2.jpg" densityAware="false"/>
+            <m:Image src="img/banner3.jpg" densityAware="false"/>
+          </m:Carousel>
+        </f:blocks>
+      </f:ObjectPageSubSection>
+    </f:subSections>
+  </f:ObjectPageSection>
+    
+    <!--Sectiunea de contact/Footer-->
+  <f:ObjectPageSection title="Contact" importance="Low">
+        <f:subSections>
+          <f:ObjectPageSubSection>
+            <f:blocks>
+              <m:HBox justifyContent="SpaceBetween" width="100%">
+                <m:VBox>
+                  <m:Title level="H6" text="Locatie"/>
+                  <m:Button text="Deschide pe harta" icon="sap-icon://map" press=".onOpenMap"/>
+                  <m:Text text="Calea Bucuresti nr. 167, Targoviste, Dambovita" wrapping="true" width="28rem"/>
+                  <m:Text text="Pentru efectuarea unei comenzi online sunati la numarul: 0730819638" wrapping="true" width="28rem"/>
+                  
+                </m:VBox>
+                 <m:VBox>
+                  <m:Title level="H6" text="Comenzi Online"/>
+                  <m:Button text="Modalitati de livrare" icon="sap-icon://navigation-right-arrow" press=".onModalitatiLivrarePress"/>
+                  <m:Button text="Plata comenzi online" icon="sap-icon://navigation-right-arrow" press=".onPlataComenziOnline"/>
+                  <m:Button text="Retur comenzi online" icon="sap-icon://navigation-right-arrow" press=".onReturComenziOnline"/>
+                </m:VBox>
+                <m:VBox>
+                  <m:Title level="H6" text="Newsletter"/>
+                  <m:SearchField placeholder="Adresa de e-mail" search=".onNewsletterSearch" width="22rem"/>
+                </m:VBox>
+              </m:HBox>
+            </f:blocks>
+          </f:ObjectPageSubSection>
+        </f:subSections>
+      </f:ObjectPageSection>
+</f:sections>
+  </f:ObjectPageLayout>
+</mvc:View>

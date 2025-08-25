@@ -1,0 +1,36 @@
+<mvc:View
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:f="sap.uxap"
+	xmlns:layout="sap.ui.layout"
+	xmlns:m="sap.m"
+    controllerName="ui5.walkthrough.controller.Settings"
+	height="100%">
+
+	<f:ObjectPageLayout>
+		<f:headerTitle>
+			<f:ObjectPageDynamicHeaderTitle>
+				
+				<f:expandedHeading>
+					<m:Title text="Profil utilizator" level="H1" />
+				</f:expandedHeading>
+			</f:ObjectPageDynamicHeaderTitle>
+		</f:headerTitle>
+
+		 <f:headerContent>
+			<m:Button text="Înapoi" icon="sap-icon://nav-back" press=".onNavBack" class="sapUiTinyMarginBottom" />
+			<m:HBox width="100%">
+				<m:VBox width="50%">
+					<m:ObjectStatus title="Username" text="iulian.negoescu" />
+					<m:ObjectStatus title="Email" text="iulian@mail.com" />
+					<m:ObjectStatus title="Rol" text="Administrator" />
+				</m:VBox>
+				<m:VBox width="50%">
+					<m:Text text="Salut! Sunt Iulian. Scriu aplicații SAP ca un Boss." />
+					<m:ObjectStatus title="Status" text="Activ" state="Success" />
+					<m:ProgressIndicator percentValue="80" displayValue="80%" />
+					<m:RatingIndicator value="5" maxValue="5" />
+				</m:VBox>
+			</m:HBox>
+		</f:headerContent>
+	</f:ObjectPageLayout>
+</mvc:View>

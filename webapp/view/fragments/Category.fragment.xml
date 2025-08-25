@@ -1,0 +1,15 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+    <Popover placement="Bottom" showHeader="false">
+        <HBox>
+            <List items="{viewModel>/categories}" width="200px">
+                <StandardListItem title="{viewModel>title}" icon="{viewModel>icon}" type="Active" press=".onCategoryPress1"/>
+            </List>
+            <List items="{viewModel>/categories1}" width="200px">
+                <StandardListItem title="{viewModel>title}" icon="{viewModel>icon}" type="Active" press=".onCategoryPres2"/>
+            </List>
+            <List items="{viewModel>/categories2}" width="200px">
+                <StandardListItem title="{viewModel>title}" icon="{viewModel>icon}" type="Active" press=".onCategoryPress3"/>
+            </List>
+        </HBox>
+    </Popover>
+</core:FragmentDefinition>

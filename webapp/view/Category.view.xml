@@ -1,0 +1,54 @@
+<core:FragmentDefinition
+  xmlns="sap.m"
+  xmlns:core="sap.ui.core"
+  xmlns:l="sap.ui.layout">
+
+  <ResponsivePopover
+      placement="Bottom"
+      contentWidth="900px"
+      contentHeight="auto"
+      showHeader="true"
+      title="Cumpără după:"
+      horizontalScrolling="false">
+
+    <l:Grid defaultSpan="L4 M4 S12" width="100%" hSpacing="2" vSpacing="1">
+
+      <VBox items="{path: 'cats>/cols/0'}" class="sapUiSmallMarginEnd">
+        <items>
+          <Button
+            text="{cats>title}"
+            icon="{cats>icon}"
+            type="Transparent"
+            iconFirst="true"
+            press=".onCategoryPress"
+            class="sapUiTinyMarginBottom"/>
+        </items>
+      </VBox>
+
+      <VBox items="{path: 'cats>/cols/1'}" class="sapUiSmallMarginEnd">
+        <items>
+          <Button
+            text="{cats>title}"
+            icon="{cats>icon}"
+            type="Transparent"
+            iconFirst="true"
+            press=".onCategoryPress"
+            class="sapUiTinyMarginBottom"/>
+        </items>
+      </VBox>
+
+      <VBox items="{path: 'cats>/cols/2'}">
+        <items>
+          <Button
+            text="{cats>title}"
+            icon="{cats>icon}"
+            type="Transparent"
+            iconFirst="true"
+            press=".onCategoryPress"
+            class="sapUiTinyMarginBottom"/>
+        </items>
+      </VBox>
+
+    </l:Grid>
+  </ResponsivePopover>
+</core:FragmentDefinition>

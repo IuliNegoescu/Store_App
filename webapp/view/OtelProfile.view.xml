@@ -10,7 +10,7 @@
         <f:headerTitle>
             <f:ObjectPageHeader
                 objectTitle="Profile laminate din oțel"
-                objectSubtitle="Selectează filtre pentru a rafina lista"/>
+                />
         </f:headerTitle>
 
         <f:sections>

@@ -1,0 +1,28 @@
+<mvc:View
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns:f="sap.uxap"
+  xmlns:m="sap.m"
+  xmlns:sf="sap.f"
+  controllerName="ui5.walkthrough.controller.ModalitatiLivrare"
+  height="100%">
+    
+    <f:ObjectPageLayout>
+        <f:headerTitle>
+            <f:ObjectPageHeader>
+                objectTitle="Modalitati de livrare"
+            </f:ObjectPageHeader>
+        </f:headerTitle>
+        <f:sections>
+            <f:ObjectPageSection>
+                <f:ObjectPageSubSection>
+                    <f:blocks>
+                        <m:HBox width="100%">
+                        
+                        </m:HBox>
+                    </f:blocks>
+                </f:ObjectPageSubSection>
+            </f:ObjectPageSection>
+        </f:sections>
+    </f:ObjectPageLayout>
+
+</mvc:View>

@@ -3,23 +3,48 @@
   xmlns:f="sap.uxap"
   xmlns:m="sap.m"
   xmlns:sf="sap.f"
+  xmlns:cards="sap.f.cards"
   controllerName="ui5.walkthrough.controller.ModalitatiLivrare"
   height="100%">
     
     <f:ObjectPageLayout>
         <f:headerTitle>
-            <f:ObjectPageHeader>
-                objectTitle="Modalitati de livrare"
-            </f:ObjectPageHeader>
+            <f:ObjectPageHeader objectTitle="Modalitati de livrare"/>
         </f:headerTitle>
+
         <f:sections>
-            <f:ObjectPageSection>
+            <f:ObjectPageSection title=" ">
                 <f:ObjectPageSubSection>
                     <f:blocks>
-                        <m:HBox width="100%">
+
+                        <!-- Text introductiv -->
+                        <m:VBox width="100%" class="sapUiMediumMarginBottom">
+                            <m:Title text="Pentru că suntem dedicați planurilor tale, îți livrăm produsele dorite până la adresa specificată de tine"
+                                     level="H3"/>
+                            <m:Text text="Livrarea produselor comandate online de pe site sau achiziționate din magazine, se efectuează pe întreg teritoriul României, prin următoarele modalități de livrare:"/>
                         
-                        </m:HBox>
-                    </f:blocks>
+
+                        <!-- GridList cu carduri -->
+                        <sf:GridList items="{delivery>/deliveryOptions}"  class="spacingTop">
+                            <sf:GridListItem>
+                                <sf:Card>
+                                    <sf:header>
+                                        <cards:Header
+                                            title="{delivery>title}"
+                                            subtitle="{delivery>subtitle}" />
+                                    </sf:header>
+                                    <sf:content>
+                                        <m:VBox alignItems="Center" class="sapUiSmallMargin">
+                                            <m:Image src="{delivery>image}" width="120px"/>
+                                            <m:Text text="{delivery>description}" wrapping="true"/>
+                                        </m:VBox>
+                                    </sf:content>
+                                </sf:Card>
+                            </sf:GridListItem>
+                        </sf:GridList>
+                        </m:VBox>
+                     </f:blocks>
+
                 </f:ObjectPageSubSection>
             </f:ObjectPageSection>
         </f:sections>

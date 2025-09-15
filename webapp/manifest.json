@@ -84,6 +84,7 @@
 				"controlAggregation": "pages"
 			},
 			"routes": [
+				
 				{
 					"pattern": "",
           			"name": "home",
@@ -98,6 +99,11 @@
 					"pattern": "otelprofile/{productId}",
 					"name": "productDetails",
 					"target": "OtelProfile"
+				  },
+				  {
+					"pattern": "livrare",
+					"name": "ModalitatiLivrare",
+					"target": "ModalitatiLivrare"
 				  }
 				
 			],
@@ -111,8 +117,10 @@
  			 "viewName": "OtelProfile",
   				"viewId": "otelprofile",
   			"viewLevel": 2
-}
-
+		},
+		"ModalitatiLivrare": {
+			"viewName": "ModalitatiLivrare"
+		 }	
 	}
 
 		}

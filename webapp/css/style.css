@@ -51,3 +51,8 @@ html[dir="rtl"] .myAppDemoWT .myCustomButton.sapMBtn {
 	margin-right: 12px;
   }
   .product-strip { gap: 24px; }
+
+  .spacingTop {
+	margin-top: 5rem;
+  }
+  

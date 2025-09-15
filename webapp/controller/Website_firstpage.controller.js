@@ -147,6 +147,11 @@ sap.ui.define([
         var oItem = oCtx && oCtx.getObject();
         sap.m.MessageToast.show("Adăugat în coș: " + (oItem ? oItem.name : "?"));
       },
+
+      onModalitatiLivrarePress:function()
+      {
+          this.getOwnerComponent().getRouter().navTo("ModalitatiLivrare");
+      },
       
     
 

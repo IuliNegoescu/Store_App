@@ -1,0 +1,209 @@
+<mvc:View
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns:f="sap.uxap"
+  xmlns:m="sap.m"
+  xmlns:core="sap.ui.core"
+  controllerName="ui5.walkthrough.controller.ReturComenziOnline"
+  height="100%">
+
+  <f:ObjectPageLayout>
+    <f:headerTitle>
+      <f:ObjectPageHeader objectTitle="Politica de retur magazin online persoane fizice"/>
+    </f:headerTitle>
+
+    <f:sections>
+
+      <!-- SECTIUNEA I -->
+      <f:ObjectPageSection title="I. INFORMAȚII PRIVIND EXERCITAREA DREPTULUI DE RETRAGERE CONFORM O.U.G. nr. 34/2014">
+        <f:ObjectPageSubSection>
+          <f:blocks>
+            <m:VBox width="100%" class="sapUiSmallMargin">
+
+              <m:Text text="Prin intermediul acestei pagini, dorim să te informăm că drepturile și obligațiile noastre, precum și ale tale, în ceea ce privește returnarea produselor cumpărate online, sunt reglementate de dispozițiile O.U.G. 34/2014." wrapping="true" class="sapUiSmallMarginBottom"/>
+
+              <m:Text text="Perioada legală de retragere este de 14 zile, însă Negoescu Brindus COM prelungește această perioadă până la maximum 30 de zile, în beneficiul clienților." wrapping="true"/>
+
+              <m:Title text="1. Dreptul de retragere conform O.U.G. 34/2014" level="H4" class="sapUiSmallMarginTop"/>
+              <m:Text text="1.1. Ai dreptul de a te retrage din contract, fără a preciza motivele, în termenul legal de 14 zile, începând cu ziua în care:" wrapping="true"/>
+
+              <m:List>
+                <m:CustomListItem>
+                  <m:HBox>
+                    <core:Icon src="sap-icon://accept" class="sapUiTinyMarginEnd"/>
+                    <m:Text text="tu sau o parte terță, alta decât transportatorul, intră în posesia fizică a produselor" wrapping="true"/>
+                  </m:HBox>
+                </m:CustomListItem>
+                <m:CustomListItem>
+                  <m:HBox>
+                    <core:Icon src="sap-icon://accept" class="sapUiTinyMarginEnd"/>
+                    <m:Text text="tu sau o parte terță, alta decât transportatorul, intră în posesia ultimului produs dintr-o comandă cu bunuri multiple" wrapping="true"/>
+                  </m:HBox>
+                </m:CustomListItem>
+              </m:List>
+
+              <m:Text text="1.2. Pentru a-ți exercita dreptul de retragere, trebuie să ne informezi prin una dintre următoarele variante:" wrapping="true" class="sapUiSmallMarginTop"/>
+
+              <m:List>
+                <m:CustomListItem>
+                  <m:HBox>
+                    <core:Icon src="sap-icon://email" class="sapUiTinyMarginEnd"/>
+                    <m:Text text="Completarea formularului de retragere și transmiterea lui pe email: suportclient@negoescu.com" wrapping="true"/>
+                  </m:HBox>
+                </m:CustomListItem>
+                <m:CustomListItem>
+                  <m:HBox>
+                    <core:Icon src="sap-icon://post" class="sapUiTinyMarginEnd"/>
+                    <m:Text text="Transmiterea prin poștă la sediul Negoescu Brindus COM a formularului de retragere" wrapping="true"/>
+                  </m:HBox>
+                </m:CustomListItem>
+                <m:CustomListItem>
+                  <m:HBox>
+                    <core:Icon src="sap-icon://document-text" class="sapUiTinyMarginEnd"/>
+                    <m:Text text="Transmiterea unei declarații neechivoce (scrisoare sau email) prin care îți exprimi decizia de retragere" wrapping="true"/>
+                  </m:HBox>
+                </m:CustomListItem>
+              </m:List>
+
+              <m:Text text="Îți vom confirma primirea cererii de retragere prin email. Folosirea formularului nu este obligatorie, dar recomandată." wrapping="true" class="sapUiSmallMarginTop"/>
+
+            </m:VBox>
+          </f:blocks>
+        </f:ObjectPageSubSection>
+      </f:ObjectPageSection>
+
+      <!-- SECTIUNEA II -->
+      <f:ObjectPageSection title="2. CONSECINȚELE RETRAGERII">
+        <f:ObjectPageSubSection>
+          <f:blocks>
+            <m:VBox width="100%" class="sapUiSmallMargin">
+              <m:Text text="2.1. Vei suporta costurile aferente returnării produselor, cu excepția situației în care returul este imputabil vânzătorului." wrapping="true"/>
+              <m:Text text="2.2. Este necesar să expediezi produsele înapoi în maximum 14 zile de la data notificării retragerii." wrapping="true" class="sapUiSmallMarginTop"/>
+              <m:Text text="2.3. Îți vom rambursa sumele datorate în termen de 14 zile de la data comunicării deciziei de retragere." wrapping="true" class="sapUiSmallMarginTop"/>
+              <m:Text text="2.4. Rambursarea poate fi amânată până la primirea produselor sau prezentarea dovezii returnării." wrapping="true" class="sapUiSmallMarginTop"/>
+            </m:VBox>
+          </f:blocks>
+        </f:ObjectPageSubSection>
+      </f:ObjectPageSection>
+
+      <!-- SECTIUNEA III -->
+      <f:ObjectPageSection title="3. ASPECTE PRIVIND RAMBURSAREA SUMELOR ÎN CAZUL RETRAGERII">
+        <f:ObjectPageSubSection>
+          <f:blocks>
+            <m:VBox width="100%" class="sapUiSmallMargin">
+
+              <m:Text text="3.1. Rambursarea se va face prin aceeași modalitate ca plata inițială, cu excepția cazului în care ai solicitat altfel." wrapping="true"/>
+              <m:Text text="3.2. Restituirea sumelor se poate face astfel:" wrapping="true" class="sapUiSmallMarginTop"/>
+
+              <m:List>
+                <m:CustomListItem>
+                  <m:HBox>
+                    <core:Icon src="sap-icon://accept" class="sapUiTinyMarginEnd"/>
+                    <m:Text text="Prin virament bancar, pentru plăți mai mari de 2.000 lei" wrapping="true"/>
+                  </m:HBox>
+                </m:CustomListItem>
+                <m:CustomListItem>
+                  <m:HBox>
+                    <core:Icon src="sap-icon://accept" class="sapUiTinyMarginEnd"/>
+                    <m:Text text="Prin transfer bancar, pentru plăți cu cardul returnate în aceeași zi" wrapping="true"/>
+                  </m:HBox>
+                </m:CustomListItem>
+                <m:CustomListItem>
+                  <m:HBox>
+                    <core:Icon src="sap-icon://accept" class="sapUiTinyMarginEnd"/>
+                    <m:Text text="În numerar, pentru plăți la livrare sub plafonul zilnic legal" wrapping="true"/>
+                  </m:HBox>
+                </m:CustomListItem>
+              </m:List>
+
+            </m:VBox>
+          </f:blocks>
+        </f:ObjectPageSubSection>
+      </f:ObjectPageSection>
+
+      <!-- SECTIUNEA IV -->
+      <f:ObjectPageSection title="4. EXCEPȚĂRI DE LA DREPTUL DE RETRAGERE">
+        <f:ObjectPageSubSection>
+          <f:blocks>
+            <m:VBox width="100%" class="sapUiSmallMargin">
+
+              <m:Text text="4.1. Sunt exceptate următoarele produse:" wrapping="true"/>
+
+              <m:List>
+                <m:CustomListItem>
+                  <m:HBox>
+                    <core:Icon src="sap-icon://decline" class="sapUiTinyMarginEnd"/>
+                    <m:Text text="Produse personalizate sau realizate conform specificațiilor clientului" wrapping="true"/>
+                  </m:HBox>
+                </m:CustomListItem>
+                <m:CustomListItem>
+                  <m:HBox>
+                    <core:Icon src="sap-icon://decline" class="sapUiTinyMarginEnd"/>
+                    <m:Text text="Produse susceptibile de deteriorare sau care expiră rapid" wrapping="true"/>
+                  </m:HBox>
+                </m:CustomListItem>
+                <m:CustomListItem>
+                  <m:HBox>
+                    <core:Icon src="sap-icon://decline" class="sapUiTinyMarginEnd"/>
+                    <m:Text text="Produse de igienă personală sau medicale sigilate" wrapping="true"/>
+                  </m:HBox>
+                </m:CustomListItem>
+              </m:List>
+
+              <m:Text text="4.2. Dacă produsele au fost folosite sau deteriorate, îți poți pierde dreptul de retragere conform legislației." wrapping="true" class="sapUiSmallMarginTop"/>
+
+            </m:VBox>
+          </f:blocks>
+        </f:ObjectPageSubSection>
+      </f:ObjectPageSection>
+
+      <!-- SECTIUNEA II Generale -->
+      <f:ObjectPageSection title="II. ASPECTE GENERALE PRIVIND RETURUL PRODUSELOR">
+        <f:ObjectPageSubSection>
+          <f:blocks>
+            <m:VBox width="100%" class="sapUiSmallMargin">
+
+              <m:Text text="1. Poți solicita un produs de calitate echivalentă cu cel returnat." wrapping="true"/>
+              <m:Text text="2. În cazul livrării prin curier, refuză coletele deteriorate pentru simplificarea returului." wrapping="true"/>
+              <m:Text text="3. Comunicarea se va face pe email la adresa din comanda inițială." wrapping="true"/>
+              <m:Text text="4. Returul produselor trebuie realizat în maxim 14 zile." wrapping="true"/>
+              <m:Text text="5. Produsele lemnoase necesită document fiscal și aviz de însoțire pentru retur." wrapping="true" class="sapUiSmallMarginTop"/>
+
+              <m:Text text="Pentru alte informații, contactează suportclienti@negoescu.com" wrapping="true" class="sapUiSmallMarginTop"/>
+
+            </m:VBox>
+          </f:blocks>
+        </f:ObjectPageSubSection>
+      </f:ObjectPageSection>
+
+      <!-- SECTIUNEA III Prelucrare date -->
+      <f:ObjectPageSection title="III. PRELUCRAREA DATELOR CU CARACTER PERSONAL">
+        <f:ObjectPageSubSection>
+          <f:blocks>
+            <m:VBox width="100%" class="sapUiSmallMargin">
+
+              <m:Text text="Datele cu caracter personal sunt prelucrate conform prevederilor legale pentru:" wrapping="true"/>
+              <m:List>
+                <m:CustomListItem>
+                  <m:HBox>
+                    <core:Icon src="sap-icon://accept" class="sapUiTinyMarginEnd"/>
+                    <m:Text text="Executarea contractului de vânzare și returnarea sumelor" wrapping="true"/>
+                  </m:HBox>
+                </m:CustomListItem>
+                <m:CustomListItem>
+                  <m:HBox>
+                    <core:Icon src="sap-icon://accept" class="sapUiTinyMarginEnd"/>
+                    <m:Text text="Respectarea obligațiilor fiscale și legale" wrapping="true"/>
+                  </m:HBox>
+                </m:CustomListItem>
+              </m:List>
+
+              <m:Text text="Datele pot include nume, prenume, domiciliu, cont bancar, email și documente fiscale. În lipsa acestor date, returul nu poate fi procesat." wrapping="true" class="sapUiSmallMarginTop"/>
+
+            </m:VBox>
+          </f:blocks>
+        </f:ObjectPageSubSection>
+      </f:ObjectPageSection>
+
+    </f:sections>
+  </f:ObjectPageLayout>
+</mvc:View>

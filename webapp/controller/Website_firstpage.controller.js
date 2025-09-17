@@ -152,9 +152,14 @@ sap.ui.define([
       {
           this.getOwnerComponent().getRouter().navTo("ModalitatiLivrare");
       },
-      
-    
-
+      onPlataComenziOnline:function()
+      {
+        this.getOwnerComponent().getRouter().navTo("PlataComenzi");
+      },
+      onReturComenziOnline:function()
+      {
+        this.getOwnerComponent().getRouter().navTo("ReturComenzi");
+      },
     onEstimareCostLivrarePress: function () {
       if (!this._oCostDialog) {
         this._oCostDialog = new Dialog({

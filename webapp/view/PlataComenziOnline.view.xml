@@ -1,0 +1,67 @@
+<mvc:View
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns:f="sap.uxap"
+  xmlns:m="sap.m"
+  xmlns:core="sap.ui.core"
+  controllerName="ui5.walkthrough.controller.PlataComenziOnline"
+  height="100%">
+
+  <f:ObjectPageLayout>
+    <f:headerTitle>
+      <f:ObjectPageHeader objectTitle="Plata comenzi online"/>
+    </f:headerTitle>
+
+    <f:sections>
+      <f:ObjectPageSection title=" ">
+        <f:ObjectPageSubSection>
+          <f:blocks>
+            <m:VBox width="100%" class="sapUiSmallMargin">
+
+              <m:Title text="Politica de retur magazin online persoane fizice" level="H3"/>
+              <m:Text text="Prin intermediul acestei pagini, dorim să te informăm că drepturile și obligațiile noastre, precum și ale tale în ceea ce privește returnarea produselor cumpărate online (de pe site-ul DEDEMAN) sunt reglementate de dispozițiile O.U.G. 34/2014 cu modificările ulterioare privind drepturile consumatorilor în cadrul contractelor încheiate cu profesioniștii, precum și pentru modificarea și completarea unor acte normative." wrapping="true"/>
+              <m:Text text="• plata prin OP (transfer bancar)" wrapping="true"/>
+              <m:Text text="• plata la livrare" wrapping="true" class="sapUiSmallMarginBottom"/>
+
+              <m:Title text="Plata online cu cardul (Visa / Mastercard)" level="H3" class="sapUiSmallMarginTop"/>
+              <m:Text text="Plata online se face în condiții de siguranță maximă..." wrapping="true"/>
+              <m:Text text="Procesatorul de plată folosește un sistem securizat, bazat pe standardul 3DSecure..." wrapping="true" class="sapUiSmallMarginTop"/>
+              <m:Text text="Cardurile acceptate la plată sunt VISA și MASTERCARD." wrapping="true" class="sapUiSmallMarginTop"/>
+              <m:Text text="Datele cardului nu vor fi accesibile și nici stocate de către site." wrapping="true" class="sapUiSmallMarginTop"/>
+
+              <m:Title text="Date ce vor fi introduse pentru efectuarea plății:" level="H4" class="sapUiSmallMarginTop"/>
+              <m:List>
+                <m:CustomListItem>
+                  <m:HBox>
+                    <core:Icon src="sap-icon://accept" class="sapUiTinyMarginEnd"/>
+                    <m:Text text="Numărul cardului (16 cifre)" wrapping="true"/>
+                  </m:HBox>
+                </m:CustomListItem>
+                <m:CustomListItem>
+                  <m:HBox>
+                    <core:Icon src="sap-icon://accept" class="sapUiTinyMarginEnd"/>
+                    <m:Text text="Data expirării (luna și anul)" wrapping="true"/>
+                  </m:HBox>
+                </m:CustomListItem>
+                <m:CustomListItem>
+                  <m:HBox>
+                    <core:Icon src="sap-icon://accept" class="sapUiTinyMarginEnd"/>
+                    <m:Text text="Codul CVC sau CVV (3 cifre)" wrapping="true"/>
+                  </m:HBox>
+                </m:CustomListItem>
+                <m:CustomListItem>
+                  <m:HBox>
+                    <core:Icon src="sap-icon://accept" class="sapUiTinyMarginEnd"/>
+                    <m:Text text="Numele de pe card" wrapping="true"/>
+                  </m:HBox>
+                </m:CustomListItem>
+              </m:List>
+
+              <m:Text text="După înregistrarea cu succes a comenzii, suma plătită va fi blocată în contul tău, urmând a fi încasată după confirmarea comenzii." wrapping="true" class="sapUiSmallMarginTop"/>
+
+            </m:VBox>
+          </f:blocks>
+        </f:ObjectPageSubSection>
+      </f:ObjectPageSection>
+    </f:sections>
+  </f:ObjectPageLayout>
+</mvc:View>

@@ -104,6 +104,16 @@
 					"pattern": "livrare",
 					"name": "ModalitatiLivrare",
 					"target": "ModalitatiLivrare"
+				  },
+				  {
+					"pattern": "platacomenzi",
+					"name": "PlataComenzi",
+					"target": "PlataComenzi"
+				  },
+				  {
+					"pattern": "retur",
+					"name": "ReturComenzi",
+					"target": "ReturComenzi"
 				  }
 				
 			],
@@ -120,7 +130,14 @@
 		},
 		"ModalitatiLivrare": {
 			"viewName": "ModalitatiLivrare"
-		 }	
+		 },
+		"PlataComenzi":{
+			"viewName": "PlataComenziOnline"
+		},
+		"ReturComenzi":{
+			"viewName": "ReturComenziOnline"
+		}
+
 	}
 
 		}

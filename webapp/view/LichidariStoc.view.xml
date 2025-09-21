@@ -1,0 +1,57 @@
+<mvc:View
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns:f="sap.uxap"
+  xmlns:m="sap.m"
+  xmlns:sf="sap.f"
+  controllerName="ui5.walkthrough.controller.LichidariStoc"
+  height="100%">
+
+    <f:ObjectPageLayout>
+        <f:headerTitle>
+            <f:ObjectPageHeader
+                objectTitle="Lichidari Stoc"
+                />
+        </f:headerTitle>
+
+        <f:sections>
+            <f:ObjectPageSection title="Produse disponibile ">
+                <f:subSections>
+                    <f:ObjectPageSubSection>
+                        <f:blocks>
+                            <m:HBox width="100%">
+                                
+                                <m:VBox width="25%" class="sapUiSmallMarginEnd">
+                                    <m:Panel headerText="Pret (lei)" expandable="true" expanded="true">
+                                        <m:VBox>
+                                            <m:CheckBox id="cbWidth12" text="12" select=".onFilterSelect"/>
+                                            <m:CheckBox id="cbWidth14" text="14" select=".onFilterSelect"/>
+                                            <m:CheckBox id="cbWidth20" text="20" select=".onFilterSelect"/>
+                                             <m:Button text="Sortează Asc" press=".onSortAsc" class="sapUiSmallMarginTop"/>
+                                            <m:Button text="Sortează Desc" press=".onSortDesc" class="sapUiTinyMarginTop"/>
+                                         </m:VBox>
+                                    </m:Panel>
+                                </m:VBox>
+
+                                <m:VBox width="75%">
+                                    <m:List id="productList" items="{prod>/items}">
+                                        <m:CustomListItem>
+                                            <m:HBox>
+                                                <m:Image src="{prod>img}" width="80px"/>
+                                                <m:VBox class="sapUiSmallMarginBegin">
+                                                    <m:Title text="{prod>name}" level="H6"/>
+                                                    <m:Text text="{prod>price} lei/m"/>
+                                                    <m:Button text="Adaugă în coș" type="Emphasized" press=".onAddToCart"/>
+                                                </m:VBox>
+                                            </m:HBox>
+                                        </m:CustomListItem>
+                                    </m:List>
+                                </m:VBox>
+
+                            </m:HBox>
+                        </f:blocks>
+                    </f:ObjectPageSubSection>
+                </f:subSections>
+            </f:ObjectPageSection>
+        </f:sections>
+    </f:ObjectPageLayout>
+</mvc:View>

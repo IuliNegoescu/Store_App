@@ -160,6 +160,14 @@ sap.ui.define([
       {
         this.getOwnerComponent().getRouter().navTo("ReturComenzi");
       },
+      onOfertePress:function()
+      {
+        this.getOwnerComponent().getRouter().navTo("OferteCurente");
+      },
+      onLichidariPress:function()
+      {
+        this.getOwnerComponent().getRouter().navTo("LichidariStoc");
+      },
     onEstimareCostLivrarePress: function () {
       if (!this._oCostDialog) {
         this._oCostDialog = new Dialog({

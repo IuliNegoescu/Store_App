@@ -114,7 +114,18 @@
 					"pattern": "retur",
 					"name": "ReturComenzi",
 					"target": "ReturComenzi"
+				  },
+				  {
+					"pattern": "oferte",
+					"name": "OferteCurente",
+					"target": "OferteCurente"
+				  },
+				  {
+					"pattern": "lichidari",
+					"name": "LichidariStoc",
+					"target": "LichidariStoc"
 				  }
+				  
 				
 			],
 			"targets": {
@@ -136,6 +147,13 @@
 		},
 		"ReturComenzi":{
 			"viewName": "ReturComenziOnline"
+		},
+		"OferteCurente":{
+			"viewName": "OferteCurente"
+		},
+		"LichidariStoc":
+		{
+			"viewName":"LichidariStoc"
 		}
 
 	}

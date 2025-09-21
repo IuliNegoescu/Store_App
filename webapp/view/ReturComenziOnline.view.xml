@@ -13,7 +13,6 @@
 
     <f:sections>
 
-      <!-- SECTIUNEA I -->
       <f:ObjectPageSection title="I. INFORMAȚII PRIVIND EXERCITAREA DREPTULUI DE RETRAGERE CONFORM O.U.G. nr. 34/2014">
         <f:ObjectPageSubSection>
           <f:blocks>
@@ -71,7 +70,6 @@
         </f:ObjectPageSubSection>
       </f:ObjectPageSection>
 
-      <!-- SECTIUNEA II -->
       <f:ObjectPageSection title="2. CONSECINȚELE RETRAGERII">
         <f:ObjectPageSubSection>
           <f:blocks>
@@ -85,7 +83,6 @@
         </f:ObjectPageSubSection>
       </f:ObjectPageSection>
 
-      <!-- SECTIUNEA III -->
       <f:ObjectPageSection title="3. ASPECTE PRIVIND RAMBURSAREA SUMELOR ÎN CAZUL RETRAGERII">
         <f:ObjectPageSubSection>
           <f:blocks>
@@ -120,7 +117,6 @@
         </f:ObjectPageSubSection>
       </f:ObjectPageSection>
 
-      <!-- SECTIUNEA IV -->
       <f:ObjectPageSection title="4. EXCEPȚĂRI DE LA DREPTUL DE RETRAGERE">
         <f:ObjectPageSubSection>
           <f:blocks>
@@ -156,7 +152,6 @@
         </f:ObjectPageSubSection>
       </f:ObjectPageSection>
 
-      <!-- SECTIUNEA II Generale -->
       <f:ObjectPageSection title="II. ASPECTE GENERALE PRIVIND RETURUL PRODUSELOR">
         <f:ObjectPageSubSection>
           <f:blocks>
@@ -175,7 +170,6 @@
         </f:ObjectPageSubSection>
       </f:ObjectPageSection>
 
-      <!-- SECTIUNEA III Prelucrare date -->
       <f:ObjectPageSection title="III. PRELUCRAREA DATELOR CU CARACTER PERSONAL">
         <f:ObjectPageSubSection>
           <f:blocks>
